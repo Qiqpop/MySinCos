@@ -4,13 +4,13 @@
 
 using namespace std;
 
-// Вычисление синуса
+// Р’С‹С‡РёСЃР»РµРЅРёРµ СЃРёРЅСѓСЃР°
 double my_sin(double x);
 
-// Вычисление косинуса
+// Р’С‹С‡РёСЃР»РµРЅРёРµ РєРѕСЃРёРЅСѓСЃР°
 double my_cos(double x);
 
-// Машинный эпсилон
+// РњР°С€РёРЅРЅС‹Р№ СЌРїСЃРёР»РѕРЅ
 double EMach();
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
 }
 
 double my_cos(double x) {
-	// Вычисление косинуса
+	// Р’С‹С‡РёСЃР»РµРЅРёРµ РєРѕСЃРёРЅСѓСЃР°
 	while (x > PI * 2) { x -= PI * 2; }
 	double tmp = 1, cos0 = 1, cos1 = 1, k = 1;
 	double d = EMach();
@@ -43,7 +43,7 @@ double my_cos(double x) {
 }
 
 double my_sin(double x) {
-	// Вычисление синуса
+	// Р’С‹С‡РёСЃР»РµРЅРёРµ СЃРёРЅСѓСЃР°
 	while (x > PI * 2) { x -= PI * 2; }
 	double tmp = x, sin0, sin1 = x, k = 1;
 	double d = EMach();
@@ -58,7 +58,7 @@ double my_sin(double x) {
 }
 
 double EMach() {
-	// Машинный эпсилон
+	// РњР°С€РёРЅРЅС‹Р№ СЌРїСЃРёР»РѕРЅ
 	double x = 1, y = 0, me;
 	do {
 		me = x;
